@@ -1,0 +1,22 @@
+{
+ "margin": 3,
+ "total_points": 167,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Carlik Jones",
+   "team": "PAR",
+   "pts": 26,
+   "reb": 4,
+   "ast": 5,
+   "pir": 28,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 2,
+ "ties": 3,
+ "late_lead_changes": 1,
+ "winner_max_deficit": 4,
+ "clutch": "go_ahead"
+}

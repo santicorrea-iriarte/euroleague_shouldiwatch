@@ -1,0 +1,22 @@
+{
+ "margin": 3,
+ "total_points": 183,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Elijah Bryant",
+   "team": "HTA",
+   "pts": 25,
+   "reb": 3,
+   "ast": 1,
+   "pir": 35,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 9,
+ "ties": 6,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 10,
+ "clutch": "missed"
+}

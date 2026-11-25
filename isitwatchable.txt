@@ -1,0 +1,24 @@
+What is this?
+Is It Watchable solves a simple problem: you want to know if a basketball game is worth watching, but you don't want the score spoiled.
+
+We crunch the live play-by-play data, analyze leads, comebacks, player performances, and clutch moments to give you a spoiler-free recommendation on whether you should tune in.
+
+How it Works
+Every NBA game is assigned a Watchability Score from 1 to 10. This score is generated automatically by a custom algorithm that looks at:
+
+Closeness: Games that stay tight in the 4th quarter get a massive boost. Blowouts get severely penalized.
+Lead Changes: Back-and-forth action creates a higher score.
+Star Power: High-scoring individual performances (e.g. 40+ point explosions) can elevate an otherwise okay game.
+Comebacks: Overcoming large deficits dramatically increases a game's watchability factor.
+The Recommendations
+TOP GAME
+An absolute classic. A buzzer-beater, wild comeback, or incredible playoff-level intensity. Drop what you're doing and watch.
+
+WATCH
+A thoroughly entertaining, competitive basketball game that is worth your time.
+
+MAYBE
+It's fine. It might get out of hand late, or perhaps it was a bit sloppy, but hardcore fans will still enjoy it.
+
+SKIP
+A wire-to-wire blowout or an incredibly ugly game. You won't miss anything by ignoring it.

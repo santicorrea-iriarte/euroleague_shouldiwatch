@@ -1,0 +1,22 @@
+{
+ "margin": 3,
+ "total_points": 169,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Jonas Valanciunas",
+   "team": "ZAL",
+   "pts": 17,
+   "reb": 20,
+   "ast": 2,
+   "pir": 36,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 1,
+ "ties": 2,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 7,
+ "clutch": "missed"
+}

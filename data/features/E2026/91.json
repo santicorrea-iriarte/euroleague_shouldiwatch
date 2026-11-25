@@ -1,0 +1,31 @@
+{
+ "margin": 3,
+ "total_points": 227,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Andres Feliz",
+   "team": "MAD",
+   "pts": 27,
+   "reb": 2,
+   "ast": 6,
+   "pir": 28,
+   "triple_double": false
+  },
+  {
+   "name": "Kendrick Nunn",
+   "team": "PAN",
+   "pts": 33,
+   "reb": 1,
+   "ast": 1,
+   "pir": 31,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 6,
+ "ties": 7,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 3,
+ "clutch": "go_ahead"
+}

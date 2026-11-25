@@ -1,0 +1,22 @@
+{
+ "margin": 5,
+ "total_points": 199,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Jean Montero",
+   "team": "OLY",
+   "pts": 26,
+   "reb": 5,
+   "ast": 2,
+   "pir": 35,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 7,
+ "ties": 5,
+ "late_lead_changes": 2,
+ "winner_max_deficit": 28,
+ "clutch": "tie"
+}

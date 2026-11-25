@@ -1,0 +1,22 @@
+{
+ "margin": 3,
+ "total_points": 203,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Tyson Carter",
+   "team": "RED",
+   "pts": 31,
+   "reb": 0,
+   "ast": 5,
+   "pir": 30,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 13,
+ "ties": 6,
+ "late_lead_changes": 3,
+ "winner_max_deficit": 14,
+ "clutch": "missed"
+}

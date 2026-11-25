@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Merece la pena?</title>
+  <meta name="description" content="Puntuaciones sin spoilers de los partidos de Euroliga / Spoiler-free EuroLeague game ratings">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-title-key="title">
+  <header class="top">
+    <div class="wrap top-inner">
+      <div>
+        <h1 data-i18n="title">¿Merece la pena?</h1>
+        <p class="sub" data-i18n="subtitle"></p>
+      </div>
+      <nav class="top-actions">
+        <a href="methodology.html" data-i18n="methodology"></a>
+        <button id="lang" class="ghost" type="button" data-i18n="lang_switch"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <div class="seg" role="tablist">
+        <button type="button" role="tab" data-view="round" data-i18n="view_round"></button>
+        <button type="button" role="tab" data-view="best" data-i18n="view_best"></button>
+      </div>
+      <div class="round-nav" id="roundNav">
+        <button type="button" class="ghost icon" id="prevRound" aria-label="previous">‹</button>
+        <select id="round"></select>
+        <button type="button" class="ghost icon" id="nextRound" aria-label="next">›</button>
+      </div>
+      <select id="team"></select>
+      <select id="minLabel">
+        <option value="skip" data-i18n="filter_all"></option>
+        <option value="maybe" data-i18n="filter_maybe"></option>
+        <option value="watch" data-i18n="filter_watch"></option>
+        <option value="top" data-i18n="filter_top"></option>
+      </select>
+      <select id="sort">
+        <option value="date" data-i18n="sort_date"></option>
+        <option value="score" data-i18n="sort_score"></option>
+      </select>
+      <label class="switch"><input type="checkbox" id="spoilers"> <span data-i18n="show_results"></span></label>
+    </div>
+
+    <div id="games" class="grid" aria-live="polite"></div>
+    <p id="meta" class="meta"></p>
+  </main>
+
+  <footer class="wrap foot"><p data-i18n="footer"></p></footer>
+
+  <template id="cardTpl">
+    <article class="card">
+      <div class="when"></div>
+      <div class="teams">
+        <div class="team home"><img alt="" loading="lazy"><span></span></div>
+        <div class="team away"><img alt="" loading="lazy"><span></span></div>
+      </div>
+      <div class="rating">
+        <div class="ring"><span class="num"></span></div>
+        <div class="label"></div>
+      </div>
+      <div class="result" hidden></div>
+      <div class="actions">
+        <button type="button" class="ghost details-btn"></button>
+        <button type="button" class="ghost reveal-btn"></button>
+      </div>
+      <div class="details" hidden></div>
+    </article>
+  </template>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

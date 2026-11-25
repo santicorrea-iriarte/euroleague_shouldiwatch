@@ -1,0 +1,22 @@
+{
+ "margin": 34,
+ "total_points": 196,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Shane Larkin",
+   "team": "ULK",
+   "pts": 25,
+   "reb": 2,
+   "ast": 1,
+   "pir": 26,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 2,
+ "ties": 0,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 1,
+ "clutch": null
+}

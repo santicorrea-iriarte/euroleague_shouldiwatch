@@ -1,0 +1,22 @@
+{
+ "margin": 4,
+ "total_points": 186,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Moses Wright",
+   "team": "MIL",
+   "pts": 29,
+   "reb": 8,
+   "ast": 2,
+   "pir": 35,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 9,
+ "ties": 5,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 3,
+ "clutch": null
+}

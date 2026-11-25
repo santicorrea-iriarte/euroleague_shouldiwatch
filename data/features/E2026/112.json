@@ -1,0 +1,40 @@
+{
+ "margin": 3,
+ "total_points": 231,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Carsen Edwards",
+   "team": "ZAL",
+   "pts": 32,
+   "reb": 2,
+   "ast": 4,
+   "pir": 21,
+   "triple_double": false
+  },
+  {
+   "name": "Duane Washington",
+   "team": "MUN",
+   "pts": 27,
+   "reb": 2,
+   "ast": 4,
+   "pir": 25,
+   "triple_double": false
+  },
+  {
+   "name": "Johannes Thiemann",
+   "team": "MUN",
+   "pts": 33,
+   "reb": 3,
+   "ast": 2,
+   "pir": 34,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 6,
+ "ties": 5,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 10,
+ "clutch": "tie"
+}

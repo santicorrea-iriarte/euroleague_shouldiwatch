@@ -1,0 +1,22 @@
+{
+ "margin": 5,
+ "total_points": 205,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Sasha Vezenkov",
+   "team": "OLY",
+   "pts": 25,
+   "reb": 6,
+   "ast": 1,
+   "pir": 38,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 6,
+ "ties": 6,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 8,
+ "clutch": "tie"
+}

@@ -1,0 +1,22 @@
+{
+ "margin": 4,
+ "total_points": 192,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Armoni Brooks",
+   "team": "PAM",
+   "pts": 26,
+   "reb": 1,
+   "ast": 0,
+   "pir": 20,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 16,
+ "ties": 12,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 5,
+ "clutch": "missed"
+}

@@ -1,0 +1,77 @@
+ReplayRank Technical Documentation: The 8 Score Parameters
+ReplayRank shows a Final Score (0–100) for each game, and also keeps an internal Uncapped Score (the raw sum of all components) so truly exceptional games can still be ranked above other “100s”; this rating is computed using eight distinct data-driven parameters described below.
+
+1. The Closeness Base (Margin Component)
+Source: Final score differential.
+Logic: This is the core “closeness” signal. The algorithm starts from a 35-point closeness window, scales it by 2.5, and then caps the base contribution at 40 so one metric can’t dominate the overall score.
+Formula (raw): max(0, 35 - final_margin) * 2.5
+Formula (added to base): min(40, max(0, 35 - final_margin) * 2.5)
+Impact: A 1-point game produces a raw value of 85, but only 40 is added to the base due to the cap. A 35-point (or larger) margin contributes 0. This keeps a competitive finish as a primary driver of excitement while preventing extreme closeness from overwhelming the score.
+1b. Down to the Wire Bonus
+Source: Final score differential (margin).
+Logic: If the game ends within two possessions, add a flat bonus to reward true nail-biters.
+Formula: +10 if margin <= 5 (otherwise 0).
+Tag: Down to the Wire (only when the bonus applies).
+Impact: Distinguishes games that stayed extremely tight to the final buzzer from other close games.
+2. Lead Changes & Ties
+Source: Play-by-Play data.
+Logic: Measures the “pendulum” effect - how often the lead changes hands and the game gets tied.
+Formula: (num_lead_changes * 1.5) + (num_times_tied * 1.0)
+Impact: Rewards true dogfights. A neck-and-neck game adds more value than a game where one team leads from start to finish.
+3. Star Power (Performance Peaks)
+Source: Individual player box score stats (points, rebounds, assists).
+Logic: Awards bonuses for big scoring nights and triple-doubles. Bonuses are accumulated across all players, then scaled and capped.
+Per-player scoring bonus:
++20 if points >= 50 (tag: Historic Performance (Name X pts))
++10 if points >= 40 (tag: Star Takeover (Name X pts))
++3 if points >= 30
+Per-player all-around bonus:
++10 for a triple-double (10+ points, 10+ rebounds, 10+ assists) (tag: Triple Double Watch)
+Scaling: star_score_scaled = star_score_raw * star_multiplier.
+Cap (added to total): star_added = min(star_cap, star_score_scaled), where star_cap = 25.
+Impact: A single 50-piece or multiple strong performances can boost the rank, while the cap prevents star power from dominating the overall score.
+4. Offensive Flow (Pace & Scoring)
+Source: Combined team points (total_points) and final margin (margin).
+Logic: Adds a small bonus for true shootouts, and applies a penalty for low-scoring games that also aren’t close.
+Formula:
++5 if total_points > 240 (tag: Shootout)
+-5 if total_points < 190 and margin > 10 (tag: Defensive Struggle)
+Otherwise: 0 (no offensive flow adjustment)
+Impact: Helps separate high-tempo classics from slow, non-competitive games without overpowering the main closeness/clutch signals.
+5. Clutch Ending (Final 24 Seconds)
+Source: Play-by-play data from the final 24 seconds of the 4th quarter (or any overtime).
+Logic: Finds the last shot attempt in the final 0:24 (field goal make/miss or free throw), reconstructs the score right before it, and checks whether that shot could have tied or won the game.
+Bonuses (when a qualifying final shot exists):
++30 if the shot is made and it would flip the margin into a win (tag: Buzzer Beater Win!)
++20 if the shot is made and it would tie the game (tag: Clutch Shot to Tie!)
++15 if the shot is missed but it was a potential win or tie (tag: Down to the Final Shot)
+Otherwise: 0 if no clutch event is detected in the last 24 seconds, or 0 if no play-by-play is available.
+Impact: Captures “one-shot to win/tie” pressure moments that don’t necessarily show up as lead-change counts.
+6. Overtime Premium
+Source: Game period count (periods).
+Logic: Each overtime period adds a fixed bonus. If the game ends in regulation (periods <= 4), this component adds 0.
+Formula (when periods > 4):
+ot_periods = periods - 4
+ot_added = 15 * ot_periods
+Tag: {ot_periods}x Overtime
+Otherwise: 0 (No overtime).
+Impact: Rewards games that go beyond regulation and scales naturally for double/triple overtime.
+7. Late Drama (Lead Changes in the Final 2 Minutes)
+Source: Play-by-play data from the final 2 minutes of the 4th quarter and of every overtime.
+Logic: If play-by-play is available and at least one lead change occurs in the final 2 minutes, apply a bonus. Otherwise, this component contributes 0.
+Formula (when late_lead_changes > 0):
+late_added = 10 + (late_lead_changes - 1) * 5
+Tag: Lead Changes in Final 2 Minutes
+Otherwise:
+0 if no lead changes are detected in the final 2 minutes or no play-by-play is available
+Impact: The first late lead change is worth +10, and each additional one adds +5 - rewarding true late chaos without letting this metric overwhelm the total score.
+8. Final Score Clamp (0–100)
+Source: The computed total score (score) after summing all components.
+Logic: The displayed score is clamped into a simple 0–100 range for a spoiler‑free, consistent UI. The raw total is preserved as the Uncapped Score for internal ranking.
+Formula:
+final_score = min(100, max(0, score))
+Impact: Prevents negative or >100 numbers in the UI, while still allowing truly exceptional games to be ordered correctly using the uncapped score.
+
+
+Why do some games show 100 but still rank differently?
+The UI score is clamped to 0–100 for readability. Ranking uses the uncapped total so multiple “100” games can still be ordered fairly.

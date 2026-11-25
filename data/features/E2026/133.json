@@ -1,0 +1,22 @@
+{
+ "margin": 6,
+ "total_points": 160,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Shavon Shields",
+   "team": "ULK",
+   "pts": 26,
+   "reb": 6,
+   "ast": 1,
+   "pir": 28,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 4,
+ "ties": 7,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 12,
+ "clutch": null
+}

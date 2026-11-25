@@ -1,0 +1,22 @@
+{
+ "margin": 11,
+ "total_points": 197,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Tj Shorts",
+   "team": "PAM",
+   "pts": 25,
+   "reb": 4,
+   "ast": 9,
+   "pir": 34,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 7,
+ "ties": 2,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 3,
+ "clutch": null
+}

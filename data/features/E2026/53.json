@@ -1,0 +1,22 @@
+{
+ "margin": 19,
+ "total_points": 203,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Andres Feliz",
+   "team": "MAD",
+   "pts": 26,
+   "reb": 4,
+   "ast": 5,
+   "pir": 30,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 2,
+ "ties": 3,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 1,
+ "clutch": null
+}

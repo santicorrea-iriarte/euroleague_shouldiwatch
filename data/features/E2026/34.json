@@ -1,0 +1,22 @@
+{
+ "margin": 11,
+ "total_points": 175,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Antonio Blakeney",
+   "team": "HTA",
+   "pts": 30,
+   "reb": 2,
+   "ast": 2,
+   "pir": 29,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 0,
+ "ties": 0,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 0,
+ "clutch": null
+}

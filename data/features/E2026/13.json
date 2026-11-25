@@ -1,0 +1,22 @@
+{
+ "margin": 7,
+ "total_points": 181,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Kevin Punter",
+   "team": "BAR",
+   "pts": 25,
+   "reb": 5,
+   "ast": 2,
+   "pir": 28,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 5,
+ "ties": 5,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 6,
+ "clutch": null
+}

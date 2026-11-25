@@ -1,0 +1,22 @@
+{
+ "margin": 17,
+ "total_points": 195,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Tyler Dorsey",
+   "team": "OLY",
+   "pts": 25,
+   "reb": 2,
+   "ast": 1,
+   "pir": 29,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 3,
+ "ties": 2,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 8,
+ "clutch": null
+}

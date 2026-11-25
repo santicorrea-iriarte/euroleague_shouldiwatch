@@ -1,0 +1,22 @@
+{
+ "margin": 2,
+ "total_points": 220,
+ "periods": 5,
+ "stars": [
+  {
+   "name": "Talen Horton Tucker",
+   "team": "ULK",
+   "pts": 32,
+   "reb": 10,
+   "ast": 2,
+   "pir": 33,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 9,
+ "ties": 8,
+ "late_lead_changes": 1,
+ "winner_max_deficit": 5,
+ "clutch": "go_ahead"
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo puntuamos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-title-key="methodology">
+  <header class="top">
+    <div class="wrap top-inner">
+      <div>
+        <h1 data-i18n="title"></h1>
+        <p class="sub"><a href="index.html" data-i18n="back"></a></p>
+      </div>
+      <nav class="top-actions"><button id="lang" class="ghost" type="button" data-i18n="lang_switch"></button></nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <!-- ======================= ESPAÑOL ======================= -->
+    <section data-lang="es">
+      <h2>Qué es esto</h2>
+      <p>Quieres ver un partido de Euroliga en diferido pero no quieres que te destripen el resultado. Analizamos de forma automática el jugada a jugada y el box score de cada partido y le damos una <b>puntuación de 0 a 100</b> sin revelar quién ganó. La puntuación se recalcula cada día con los partidos nuevos.</p>
+
+      <h2>Las etiquetas</h2>
+      <table>
+        <tr><td><span class="pill top">Imprescindible</span> 85–100</td><td>Un clásico: canasta sobre la bocina, prórroga, remontada o un final de locos. Deja lo que estés haciendo.</td></tr>
+        <tr><td><span class="pill watch">Merece la pena</span> 60–84</td><td>Un partido competido y entretenido que vale tu tiempo.</td></tr>
+        <tr><td><span class="pill maybe">Quizás</span> 30–59</td><td>Está bien. A lo mejor se rompió al final o fue algo espeso, pero si eres de uno de los dos equipos lo disfrutarás.</td></tr>
+        <tr><td><span class="pill skip">Sáltatelo</span> 0–29</td><td>Paliza de principio a fin o un partido feo. No te pierdes nada.</td></tr>
+      </table>
+      <p>Con los datos de la temporada 2026-27, alrededor del 15&nbsp;% de los partidos son <i>Imprescindibles</i> y un 35&nbsp;% <i>Sáltatelo</i>.</p>
+
+      <h2>Los componentes</h2>
+      <p>El sistema se inspira en el de ReplayRank, adaptado a la Euroliga: partidos de 40 minutos, menos posesiones y menos puntos que en la NBA. La puntuación es la suma de estos componentes:</p>
+      <table>
+        <tr><th>Componente</th><th>Cálculo</th></tr>
+        <tr><td><b>1. Igualdad final</b></td><td><code>min(40, max(0, 25 − diferencia) × 1,6)</code>. Un partido de 1 punto suma 38; uno de 25 o más, 0. Es la señal principal.</td></tr>
+        <tr><td><b>1b. Final apretado</b></td><td>+5 si la diferencia final es de 5 puntos o menos (dos posesiones).</td></tr>
+        <tr><td><b>2. Cambios de líder y empates</b></td><td><code>cambios × 1,5 + empates × 1</code>, con un máximo de 20. Premia los partidos de ida y vuelta.</td></tr>
+        <tr><td><b>3. Actuaciones individuales</b></td><td>Por jugador: +20 con 40 puntos o más, +10 con 30 o más, +3 con 25 o más; +5 con 35 o más de valoración; +15 por un triple-doble. Se suma todo y el máximo es 20.</td></tr>
+        <tr><td><b>4. Ritmo anotador</b></td><td>+5 si entre los dos equipos suman más de 190 puntos. −5 si suman menos de 140 y la diferencia es de más de 10.</td></tr>
+        <tr><td><b>5. Último tiro</b></td><td>Últimos 24 segundos del 4.º cuarto o de cada prórroga: +20 si un tiro anotado puso por delante al equipo que iba perdiendo o empatado, +15 si un tiro anotado empató, +10 si un tiro fallado podía empatar o ganar.</td></tr>
+        <tr><td><b>6. Prórrogas</b></td><td>+15 por cada prórroga.</td></tr>
+        <tr><td><b>7. Drama final</b></td><td>Cambios de líder en los 2 últimos minutos del 4.º cuarto o de las prórrogas: +8 por el primero y +4 por cada uno más.</td></tr>
+        <tr><td><b>8. Remontada</b></td><td>Si el ganador llegó a perder de 10 o más: <code>(máx. desventaja − 9) × 1,5</code>, con un máximo de 15.</td></tr>
+        <tr><td><b>9. Contexto</b></td><td>+5 si los dos equipos estaban en el Top 8 antes de la jornada (desde la jornada 5). +10 en play-in y playoffs, +15 en la Final Four.</td></tr>
+      </table>
+
+      <h2>¿Por qué varios partidos tienen 100?</h2>
+      <p>La nota visible se limita a 0–100 para que sea fácil de leer, pero guardamos la <b>puntuación sin límite</b> (la suma real). La vista «Mejores de la temporada» ordena por esa suma, así que dos partidos con 100 quedan en el orden justo.</p>
+
+      <h2>Spoilers</h2>
+      <p>En la portada solo se ven los equipos, la puntuación y la etiqueta. Los detalles (qué pasó, qué jugador destacó) y el resultado están ocultos hasta que pulses el botón. Incluso la nota da alguna pista: un 95 te dice que fue igualado. Si no quieres ni eso, mira solo la etiqueta.</p>
+
+      <h2>Limitaciones</h2>
+      <p>El proceso es automático y no sabe todo lo que hace bueno a un partido: el ambiente, una rivalidad histórica, un debut… Si un partido no tiene jugada a jugada, la puntuación es aproximada y se avisa en los detalles. Usa la nota como guía y mézclala con tu criterio.</p>
+    </section>
+
+    <!-- ======================= ENGLISH ======================= -->
+    <section data-lang="en" hidden>
+      <h2>What is this?</h2>
+      <p>You want to watch a EuroLeague game on delay without having the result spoiled. We automatically analyse each game's play-by-play and box score and give it a <b>score from 0 to 100</b> without revealing who won. Scores are recomputed daily as new games are played.</p>
+
+      <h2>The labels</h2>
+      <table>
+        <tr><td><span class="pill top">Must watch</span> 85–100</td><td>A classic: buzzer-beater, overtime, comeback or a wild finish. Drop what you're doing.</td></tr>
+        <tr><td><span class="pill watch">Watch</span> 60–84</td><td>A competitive, entertaining game that's worth your time.</td></tr>
+        <tr><td><span class="pill maybe">Maybe</span> 30–59</td><td>It's fine. It may have got out of hand late or been a bit sloppy, but fans of either team will enjoy it.</td></tr>
+        <tr><td><span class="pill skip">Skip</span> 0–29</td><td>A wire-to-wire blowout or an ugly game. You won't miss anything.</td></tr>
+      </table>
+      <p>On 2026-27 data, about 15% of games are <i>Must watch</i> and 35% are <i>Skip</i>.</p>
+
+      <h2>The components</h2>
+      <p>The system is inspired by ReplayRank's, adapted to the EuroLeague: 40-minute games with fewer possessions and fewer points than the NBA. The score is the sum of these components:</p>
+      <table>
+        <tr><th>Component</th><th>Formula</th></tr>
+        <tr><td><b>1. Final margin</b></td><td><code>min(40, max(0, 25 − margin) × 1.6)</code>. A 1-point game gets 38; a 25+ point margin gets 0. This is the core signal.</td></tr>
+        <tr><td><b>1b. Down to the wire</b></td><td>+5 if the final margin is 5 points or fewer (two possessions).</td></tr>
+        <tr><td><b>2. Lead changes &amp; ties</b></td><td><code>lead changes × 1.5 + ties × 1</code>, capped at 20. Rewards back-and-forth games.</td></tr>
+        <tr><td><b>3. Star power</b></td><td>Per player: +20 for 40+ points, +10 for 30+, +3 for 25+; +5 for a PIR of 35+; +15 for a triple-double. Summed and capped at 20.</td></tr>
+        <tr><td><b>4. Scoring pace</b></td><td>+5 if the two teams combine for more than 190 points. −5 if they combine for fewer than 140 and the margin is over 10.</td></tr>
+        <tr><td><b>5. Final shot</b></td><td>Last 24 seconds of Q4 or of any overtime: +20 if a made shot put a trailing or tied team in front, +15 if a made shot tied the game, +10 if a missed shot could have tied or won it.</td></tr>
+        <tr><td><b>6. Overtime</b></td><td>+15 per overtime period.</td></tr>
+        <tr><td><b>7. Late drama</b></td><td>Lead changes in the last 2 minutes of Q4 or of overtime: +8 for the first, +4 for each additional one.</td></tr>
+        <tr><td><b>8. Comeback</b></td><td>If the winner trailed by 10 or more: <code>(max deficit − 9) × 1.5</code>, capped at 15.</td></tr>
+        <tr><td><b>9. Context</b></td><td>+5 if both teams were in the top 8 before the round (from round 5). +10 for play-in and playoffs, +15 for the Final Four.</td></tr>
+      </table>
+
+      <h2>Why do several games show 100?</h2>
+      <p>The displayed score is clamped to 0–100 for readability, but we keep the <b>uncapped score</b> (the real sum). The "Best of the season" view sorts by that sum, so two games showing 100 still end up in a fair order.</p>
+
+      <h2>Spoilers</h2>
+      <p>The main page shows only the teams, the score and the label. The details (what happened, who starred) and the result stay hidden until you click. Even the score hints at something: a 95 tells you it was close. If you don't want even that, look only at the label.</p>
+
+      <h2>Limitations</h2>
+      <p>The process is automatic and can't capture everything that makes a game great: the atmosphere, a historic rivalry, a debut… If a game has no play-by-play, the score is approximate and the details say so. Use the score as a guide and add your own judgement.</p>
+    </section>
+  </main>
+
+  <footer class="wrap foot"><p data-i18n="footer"></p></footer>
+  <script src="i18n.js"></script>
+  <script>
+    I18N.load(I18N.lang);
+    document.getElementById("lang").onclick = () => I18N.toggle();
+  </script>
+</body>
+</html>

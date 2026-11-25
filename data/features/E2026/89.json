@@ -1,0 +1,22 @@
+{
+ "margin": 2,
+ "total_points": 204,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Lonnie Walker Iv",
+   "team": "BES",
+   "pts": 30,
+   "reb": 4,
+   "ast": 5,
+   "pir": 36,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 10,
+ "ties": 6,
+ "late_lead_changes": 1,
+ "winner_max_deficit": 13,
+ "clutch": "go_ahead"
+}

@@ -1,0 +1,22 @@
+{
+ "margin": 5,
+ "total_points": 193,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Nadir Hifi",
+   "team": "PRS",
+   "pts": 26,
+   "reb": 0,
+   "ast": 4,
+   "pir": 30,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 10,
+ "ties": 6,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 5,
+ "clutch": null
+}

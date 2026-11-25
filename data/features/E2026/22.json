@@ -1,0 +1,31 @@
+{
+ "margin": 4,
+ "total_points": 200,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Elijah Bryant",
+   "team": "HTA",
+   "pts": 22,
+   "reb": 13,
+   "ast": 7,
+   "pir": 40,
+   "triple_double": false
+  },
+  {
+   "name": "Theo Maledon",
+   "team": "MAD",
+   "pts": 26,
+   "reb": 5,
+   "ast": 7,
+   "pir": 40,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 2,
+ "ties": 4,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 1,
+ "clutch": null
+}

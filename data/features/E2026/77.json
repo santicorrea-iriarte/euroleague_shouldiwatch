@@ -1,0 +1,31 @@
+{
+ "margin": 30,
+ "total_points": 206,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Antonio Blakeney",
+   "team": "HTA",
+   "pts": 35,
+   "reb": 3,
+   "ast": 1,
+   "pir": 35,
+   "triple_double": false
+  },
+  {
+   "name": "Elijah Bryant",
+   "team": "HTA",
+   "pts": 16,
+   "reb": 3,
+   "ast": 12,
+   "pir": 35,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 1,
+ "ties": 2,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 4,
+ "clutch": null
+}

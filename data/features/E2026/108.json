@@ -1,0 +1,22 @@
+{
+ "margin": 4,
+ "total_points": 186,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Tremont Waters",
+   "team": "ASV",
+   "pts": 26,
+   "reb": 1,
+   "ast": 3,
+   "pir": 30,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 7,
+ "ties": 7,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 10,
+ "clutch": null
+}

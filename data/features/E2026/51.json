@@ -1,0 +1,22 @@
+{
+ "margin": 4,
+ "total_points": 198,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Dwayne Bacon",
+   "team": "DUB",
+   "pts": 29,
+   "reb": 3,
+   "ast": 1,
+   "pir": 27,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 3,
+ "ties": 2,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 11,
+ "clutch": null
+}

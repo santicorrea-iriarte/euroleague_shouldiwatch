@@ -1,0 +1,22 @@
+{
+ "margin": 29,
+ "total_points": 173,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Evan Fournier",
+   "team": "OLY",
+   "pts": 28,
+   "reb": 2,
+   "ast": 5,
+   "pir": 28,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 1,
+ "ties": 1,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 1,
+ "clutch": null
+}

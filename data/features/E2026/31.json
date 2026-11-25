@@ -1,0 +1,31 @@
+{
+ "margin": 2,
+ "total_points": 194,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Nadir Hifi",
+   "team": "PRS",
+   "pts": 30,
+   "reb": 3,
+   "ast": 2,
+   "pir": 21,
+   "triple_double": false
+  },
+  {
+   "name": "Tyson Etienne",
+   "team": "PRS",
+   "pts": 27,
+   "reb": 0,
+   "ast": 1,
+   "pir": 17,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 7,
+ "ties": 11,
+ "late_lead_changes": 1,
+ "winner_max_deficit": 10,
+ "clutch": "missed"
+}

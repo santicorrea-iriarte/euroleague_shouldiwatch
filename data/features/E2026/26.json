@@ -1,0 +1,22 @@
+{
+ "margin": 13,
+ "total_points": 197,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Patty Mills",
+   "team": "ASV",
+   "pts": 26,
+   "reb": 0,
+   "ast": 3,
+   "pir": 25,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 11,
+ "ties": 6,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 18,
+ "clutch": null
+}

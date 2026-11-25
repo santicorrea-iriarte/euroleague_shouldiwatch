@@ -1,0 +1,22 @@
+{
+ "margin": 19,
+ "total_points": 171,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Theo Maledon",
+   "team": "MAD",
+   "pts": 26,
+   "reb": 7,
+   "ast": 2,
+   "pir": 35,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 5,
+ "ties": 4,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 7,
+ "clutch": null
+}
