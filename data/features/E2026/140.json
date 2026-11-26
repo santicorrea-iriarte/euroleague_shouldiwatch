@@ -1,0 +1,22 @@
+{
+ "margin": 25,
+ "total_points": 183,
+ "periods": 4,
+ "stars": [
+  {
+   "name": "Cory Joseph",
+   "team": "OLY",
+   "pts": 27,
+   "reb": 1,
+   "ast": 3,
+   "pir": 31,
+   "triple_double": false
+  }
+ ],
+ "has_pbp": true,
+ "lead_changes": 5,
+ "ties": 9,
+ "late_lead_changes": 0,
+ "winner_max_deficit": 6,
+ "clutch": null
+}
